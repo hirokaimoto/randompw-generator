@@ -11,7 +11,7 @@ function generatePassword () {
     let passwordOne = "";
     let passwordTwo = "";
 
-    if (isNaN(pwSize) || pwSize === "") {
+    if (isNaN(pwSize) || pwSize == "" || pwSize == null) {
         for (let i = 0; i < 15; i++){
             let randomCharOne = Math.floor(Math.random() * characters.length);
             let randomCharTwo = Math.floor(Math.random() * characters.length);
