@@ -10,28 +10,30 @@
 <body>
     <div id="container">
         <main>
-            <h1>Generate a <br>
-            <span>random password</span></h1>
-            <p>Keep your data hard to invade.</p>
-            
-            <button id="generate-el" onclick="generatePassword()">
-                Generate Passwords
-            </button>
+            <div class="header-wrapper">
+                <h1>Generate a <br>
+                <span>random password</span></h1>
+                <p>Keep your data hard to invade.</p>
+                
+                <button id="generate-el" onclick="generatePassword()">
+                    Generate Passwords
+                </button>
+            </div>
             <hr>
-            <fieldset id="fieldone-el">
+            <div class="input-wrapper">
+                <input id="fieldone-el" class="field" type="text" readonly>
+                
+                <input id="fieldtwo-el" class="field" readonly>
+            </div>
             
-            </fieldset>
-            <fieldset id="fieldtwo-el">
-            
-            </fieldset>
         </main>
-        <footer>
-            <h2>
-                Password Generator
-            </h2>
-            <a href="https://github.com/hirokaimoto">Gitub</a>
-        </footer>
     </div>
+    <footer>
+        <h2>
+            Password Generator
+        </h2>
+        <a href="https://github.com/hirokaimoto">Gitub</a> 
+    </footer>
     <script src="index.js"></script>
 </body>
 

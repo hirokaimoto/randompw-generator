@@ -8,48 +8,53 @@ font-family: 'Karla', sans-serif; */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-#container {
+/* #container {
     display: inline-block;
     max-width: 1200px;
     margin: auto;
     align-content: center;
     align-items: center;
     justify-content: center;
-}
+} */
 
-body {
-    height: 550px;
-    width: 550px;
+html, body {
+    /* height: 550px;
+    width: 550px; */
     background-color: #1F2937;
     font-family: 'Inter', sans-serif;
     color: white;
-    margin-left: 2em;
+    height: 100vh;
+    
     
 }
 
-main {
-    max-width: 1000px;
-    
+
+.header-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
 }
 
-h1 {
+.header-wrapper h1 {
     font-family: 'Karla', sans-serif;
     color: #FFFFFF;
     font-size: 2em;
     line-height: 40px;
-    margin-top: 2em;
+    
 }
 
-p {
+.header-wrapper p {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 1em;
     margin-top: 0px;
     margin-bottom: 50px;
-    
 }
 
 a {
@@ -79,10 +84,6 @@ button {
     color: white;
     box-shadow: 0px 1px 2px 0px #0000000D;
     padding: 9px 17px 9px 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     margin-bottom: 35px;
@@ -97,22 +98,36 @@ hr {
     margin-bottom: 1em;
 }
 
-fieldset {
+.input-wrapper {
+    text-align: center;
+}
+
+.field {
     display: inline-block;
     text-align: center;
     width: 211px;
-    height: 39px;
     line-height: 39px;
-    justify-content: center;
     background: #273549;
     border-radius: 6px;
     margin-right: 24px;
     color: #55F991;
-    border: 1px;
-    align-content: center;
-    align-items: center;
+    border: 0;
+
+}
+.field:focus {
+    outline: none !important;
+    border:1px solid #10B981;
+    box-shadow: 0 0 10px #719ECE;
 }
 
-/* footer {
+footer {
+    position: absolute;
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
     background-color: #2F3E53;
-} */
+    line-height: 50px;
+    bottom: 0;
+    width: 100%;
+    
+}
